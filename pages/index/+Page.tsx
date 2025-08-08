@@ -1,16 +1,12 @@
-import { Counter } from "./Counter.js";
-
 export default function Page() {
   return (
     <>
-      <h1 className={"font-bold text-3xl pb-4"}>My Vike app</h1>
-      This page is:
-      <ul>
-        <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <Counter />
-        </li>
-      </ul>
+      <h1>VargTech</h1>
+      <p>Votre partenaire pour des solutions web sur mesure.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis tenetur eaque. Rerum corrupti a itaque animi
+        repudiandae. Vitae voluptas porro illum architecto excepturi exercitationem sequi quasi dicta officiis harum.
+      </p>
     </>
   );
 }

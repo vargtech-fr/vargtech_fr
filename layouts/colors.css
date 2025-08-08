@@ -1,0 +1,48 @@
+@theme {
+  /* Couleurs génériques */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Couleurs principales (à ajuster si besoin) */
+  --color-primary: #634295; /* fuchsia-blue-700 */
+  --color-secondary: #8ecf24; /* atlantis-600 */
+
+  /* fuchsia-blue (violet) */
+  --color-fuchsia-blue-50: #cfc6ed;
+  --color-fuchsia-blue-100: #c1b5e7;
+  --color-fuchsia-blue-200: #a792da;
+  --color-fuchsia-blue-300: #997fd3;
+  --color-fuchsia-blue-400: #8f6fcb;
+  --color-fuchsia-blue-500: #7e58ba;
+  --color-fuchsia-blue-600: #7852b1;
+  --color-fuchsia-blue-700: #634295;
+  --color-fuchsia-blue-800: #5b3d88;
+  --color-fuchsia-blue-900: #442e66;
+  --color-fuchsia-blue-950: #352352;
+
+  /* atlantis (vert) */
+  --color-atlantis-50: #ecf9ce;
+  --color-atlantis-100: #e2f6b9;
+  --color-atlantis-200: #cbee89;
+  --color-atlantis-300: #b0e258;
+  --color-atlantis-400: #99d533;
+  --color-atlantis-500: #8ecf24;
+  --color-atlantis-600: #7bb520;
+  --color-atlantis-700: #5a8718;
+  --color-atlantis-800: #466917;
+  --color-atlantis-900: #3b5618;
+  --color-atlantis-950: #374f18;
+
+  /* Neutres teintés de violet */
+  --color-neutral-violet-50: #f2ebfa;
+  --color-neutral-violet-100: #dcd4e5;
+  --color-neutral-violet-200: #c7bdd0;
+  --color-neutral-violet-300: #b1a7bb;
+  --color-neutral-violet-400: #9c92a6;
+  --color-neutral-violet-500: #877d91;
+  --color-neutral-violet-600: #73697c;
+  --color-neutral-violet-700: #5f5668;
+  --color-neutral-violet-800: #4b4353;
+  --color-neutral-violet-900: #37313e;
+  --color-neutral-violet-950: #242029;
+}

@@ -1,9 +1,9 @@
 export default function Page() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 text-gray-900">
+    <main className="max-w-4xl mx-auto px-4 py-12 text-neutral-200">
       <header>
         <h1 className="text-3xl font-bold mb-2">Politique de confidentialité</h1>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-neutral-300">
           Dernière mise à jour : <time dateTime="2025-08-08">8 août 2025</time>
         </p>
       </header>
@@ -22,10 +22,7 @@ export default function Page() {
         <p>
           <strong>VargTech (EURL)</strong> — 13 rue de Pendille, 44720 Saint-Joachim — France.
           <br />
-          Email :{" "}
-          <a href="mailto:michael.derrien@vargtech.fr" className="text-blue-600 underline">
-            michael.derrien@vargtech.fr
-          </a>
+          Email : <a href="mailto:michael.derrien@vargtech.fr">michael.derrien@vargtech.fr</a>
           <br />
           Directeur de la publication : <strong>Michael Derrien</strong>.
         </p>
@@ -44,21 +41,11 @@ export default function Page() {
         <ul className="list-disc pl-6 space-y-2">
           <li>
             <strong>Prise de rendez-vous</strong> : un lien vers la plateforme{" "}
-            <a
-              href="https://calendly.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline"
-            >
+            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
               Calendly
             </a>{" "}
             est proposé. En cliquant sur ce lien, vous quittez ce site et êtes soumis à la{" "}
-            <a
-              href="https://calendly.com/privacy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline"
-            >
+            <a href="https://calendly.com/privacy" target="_blank" rel="noopener noreferrer">
               politique de confidentialité de Calendly
             </a>
             .
@@ -88,15 +75,9 @@ export default function Page() {
         </p>
         <p className="mt-2">
           Pour toute question concernant cette politique :{" "}
-          <a href="mailto:michael.derrien@vargtech.fr" className="text-blue-600 underline">
-            michael.derrien@vargtech.fr
-          </a>
+          <a href="mailto:michael.derrien@vargtech.fr">michael.derrien@vargtech.fr</a>
         </p>
       </section>
-
-      <footer className="mt-12 border-t border-gray-200 pt-4">
-        <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} VargTech. Tous droits réservés.</p>
-      </footer>
     </main>
   );
 }

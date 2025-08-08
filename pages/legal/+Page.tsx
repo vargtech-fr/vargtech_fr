@@ -1,16 +1,16 @@
 export default function Page() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 text-gray-900">
+    <main className="px-4 py-12 text-neutral-200">
       <header>
         <h1 className="text-3xl font-bold mb-2">Mentions légales</h1>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-neutral-300">
           Dernière mise à jour : <time dateTime="2025-08-08">8 août 2025</time>
         </p>
       </header>
 
       <section className="mt-8">
         <h2 className="text-lg font-semibold mb-2">1. Éditeur du site</h2>
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+        <div className="bg-neutral-violet-950 border border-gray-200 rounded-xl p-4">
           <p className="font-bold">VargTech (Entreprise unipersonnelle à responsabilité limitée)</p>
           <address className="not-italic">
             13 rue de Pendille
@@ -18,10 +18,7 @@ export default function Page() {
             44720 Saint-Joachim — France
           </address>
           <p className="mt-2">
-            Email :{" "}
-            <a href="mailto:michael.derrien@vargtech.fr" className="text-blue-600 underline">
-              michael.derrien@vargtech.fr
-            </a>
+            Email : <a href="mailto:michael.derrien@vargtech.fr">michael.derrien@vargtech.fr</a>
             <br />
             SIRET : 953 268 174 00017
             <br />
@@ -43,12 +40,7 @@ export default function Page() {
           88 Colin P. Kelly Jr St, San Francisco, CA 94107, États-Unis.
           <br />
           Service :{" "}
-          <a
-            href="https://pages.github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
+          <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">
             GitHub Pages
           </a>
           .
@@ -93,10 +85,6 @@ export default function Page() {
           et/ou leur exécution relève des juridictions françaises compétentes.
         </p>
       </section>
-
-      <footer className="mt-12 border-t border-gray-200 pt-4">
-        <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} VargTech. Tous droits réservés.</p>
-      </footer>
     </main>
   );
 }

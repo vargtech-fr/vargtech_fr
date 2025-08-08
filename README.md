@@ -1,53 +1,68 @@
-Generated with [vike.dev/new](https://vike.dev/new) ([version 462](https://www.npmjs.com/package/create-vike/v/0.0.462)) using this command:
+# 🐺 VargTech FR - Site Vitrine
 
-```sh
-pnpm create vike@latest --react --tailwindcss --eslint --prettier
+Site vitrine officiel de **VargTech FR** - Solutions technologiques et développement logiciel sur mesure.
+
+## 📋 À propos
+
+Ce dépôt contient le code source du site [vargtech.fr](https://vargtech.fr), vitrine de Michael Derrien, développeur freelance spécialisé en **Go** et **React** avec plus de 10 ans d'expérience.
+
+**Mission** : Concevoir des applications web sur mesure, simples et performantes pour automatiser vos tâches, centraliser vos données et améliorer votre productivité.
+
+## 🛠️ Technologies
+
+- **Framework** : [Vike](https://vike.dev/) (React SSG/SSR)
+- **Frontend** : React 19 + TypeScript
+- **Styling** : Tailwind CSS 4
+- **Build** : Vite 7
+- **Qualité** : ESLint + Prettier
+- **Hébergement** : GitHub Pages
+
+## 🚀 Développement
+
+### Prérequis
+
+- Node.js 18+
+- pnpm (recommandé)
+
+### Installation
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/vargtech-fr/vargtech_fr.git
+cd vargtech_fr
+
+# Installer les dépendances
+pnpm install
 ```
 
-## Contents
+### Commandes disponibles
 
-* [React](#react)
+```bash
+# Développement local
+pnpm dev
 
-  * [`/pages/+config.ts`](#pagesconfigts)
-  * [Routing](#routing)
-  * [`/pages/_error/+Page.jsx`](#pages_errorpagejsx)
-  * [`/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`](#pagesonpagetransitionstartts-and-pagesonpagetransitionendts)
-  * [SSR](#ssr)
-  * [HTML Streaming](#html-streaming)
+# Build de production
+pnpm build
 
-## React
+# Prévisualisation du build
+pnpm preview
 
-This app is ready to start. It's powered by [Vike](https://vike.dev) and [React](https://react.dev/learn).
+# Linting
+pnpm lint
+```
 
-### `/pages/+config.ts`
+## 📁 Structure
 
-Such `+` files are [the interface](https://vike.dev/config) between Vike and your code. It defines:
+```
+vargtech_fr/
+├── assets/          # Images et ressources statiques
+├── components/      # Composants React réutilisables
+├── layouts/         # Layouts et styles globaux
+├── pages/          # Pages du site (routage automatique)
+└── ...             # Configuration (Vite, ESLint, TypeScript...)
+```
 
-* A default [`<Layout>` component](https://vike.dev/Layout) (that wraps your [`<Page>` components](https://vike.dev/Page)).
-* A default [`title`](https://vike.dev/title).
-* Global [`<head>` tags](https://vike.dev/head-tags).
+---
 
-### Routing
-
-[Vike's built-in router](https://vike.dev/routing) lets you choose between:
-
-* [Filesystem Routing](https://vike.dev/filesystem-routing) (the URL of a page is determined based on where its `+Page.jsx` file is located on the filesystem)
-* [Route Strings](https://vike.dev/route-string)
-* [Route Functions](https://vike.dev/route-function)
-
-### `/pages/_error/+Page.jsx`
-
-The [error page](https://vike.dev/error-page) which is rendered when errors occur.
-
-### `/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`
-
-The [`onPageTransitionStart()` hook](https://vike.dev/onPageTransitionStart), together with [`onPageTransitionEnd()`](https://vike.dev/onPageTransitionEnd), enables you to implement page transition animations.
-
-### SSR
-
-SSR is enabled by default. You can [disable it](https://vike.dev/ssr) for all your pages or only for some pages.
-
-### HTML Streaming
-
-You can enable/disable [HTML streaming](https://vike.dev/stream) for all your pages, or only for some pages while still using it for others.
+Développé avec passion 🐺 par Michael Derrien | VargTech FR
 

@@ -1,6 +1,6 @@
 // https://vike.dev/Head
 
-import logoUrl from "../assets/logo.svg";
+import logoUrl from "../assets/logo_bg_black.svg";
 
 export default function HeadDefault() {
   return (
@@ -26,7 +26,7 @@ export default function HeadDefault() {
             "@type": "Organization",
             name: "VargTech",
             url: "https://vargtech.fr",
-            logo: "https://vargtech.fr/assets/logo.svg",
+            logo: "https://vargtech.fr/assets/logo_bg_black.svg",
             founder: {
               "@type": "Person",
               name: "Michael Derrien",

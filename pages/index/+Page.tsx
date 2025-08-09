@@ -1,7 +1,9 @@
+import Title from "./components/Title";
+
 export default function Page() {
   return (
     <>
-      <h1>VargTech</h1>
+      <Title />
       <p>Votre partenaire pour des solutions web sur mesure.</p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis tenetur eaque. Rerum corrupti a itaque animi

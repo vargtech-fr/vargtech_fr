@@ -2,15 +2,15 @@ export default function Page() {
   return (
     <main className="px-4 py-12 text-neutral-200">
       <header>
-        <h1 className="text-3xl font-bold mb-2">Mentions légales</h1>
+        <h1 className="mb-2 text-3xl font-bold">Mentions légales</h1>
         <p className="text-sm text-neutral-300">
           Dernière mise à jour : <time dateTime="2025-08-08">8 août 2025</time>
         </p>
       </header>
 
       <section className="mt-8">
-        <h2 className="text-lg font-semibold mb-2">1. Éditeur du site</h2>
-        <div className="bg-neutral-violet-950 border border-gray-200 rounded-xl p-4">
+        <h2 className="mb-2 text-lg font-semibold">1. Éditeur du site</h2>
+        <div className="bg-neutral-violet-950 rounded-xl border border-gray-200 p-4">
           <p className="font-bold">VargTech (Entreprise unipersonnelle à responsabilité limitée)</p>
           <address className="not-italic">
             13 rue de Pendille
@@ -33,7 +33,7 @@ export default function Page() {
       </section>
 
       <section className="mt-8">
-        <h2 className="text-lg font-semibold mb-2">2. Hébergement</h2>
+        <h2 className="mb-2 text-lg font-semibold">2. Hébergement</h2>
         <p>
           Le site est hébergé par : <strong>GitHub, Inc.</strong>
           <br />
@@ -48,7 +48,7 @@ export default function Page() {
       </section>
 
       <section className="mt-8">
-        <h2 className="text-lg font-semibold mb-2">3. Propriété intellectuelle</h2>
+        <h2 className="mb-2 text-lg font-semibold">3. Propriété intellectuelle</h2>
         <p>
           L’ensemble des contenus de ce site (textes, images, graphismes, logos, icônes, codes, etc.) est la propriété
           exclusive de <strong>VargTech</strong>, sauf mention contraire, et est protégé par le droit d’auteur et les
@@ -61,7 +61,7 @@ export default function Page() {
       </section>
 
       <section className="mt-8">
-        <h2 className="text-lg font-semibold mb-2">4. Responsabilité</h2>
+        <h2 className="mb-2 text-lg font-semibold">4. Responsabilité</h2>
         <p>
           Les informations fournies sur ce site le sont à titre indicatif. Malgré des mises à jour régulières,{" "}
           <strong>VargTech</strong> ne saurait être tenue responsable des erreurs, omissions, ou de l’indisponibilité
@@ -70,7 +70,7 @@ export default function Page() {
       </section>
 
       <section className="mt-8">
-        <h2 className="text-lg font-semibold mb-2">5. Données personnelles & cookies</h2>
+        <h2 className="mb-2 text-lg font-semibold">5. Données personnelles & cookies</h2>
         <p>
           Ce site statique ne dépose aucun cookie de suivi et ne collecte pas de données personnelles à l’insu des
           visiteurs. Si un moyen de contact est utilisé (email, prise de rendez-vous, etc.), les informations
@@ -79,7 +79,7 @@ export default function Page() {
       </section>
 
       <section className="mt-8">
-        <h2 className="text-lg font-semibold mb-2">6. Droit applicable</h2>
+        <h2 className="mb-2 text-lg font-semibold">6. Droit applicable</h2>
         <p>
           Les présentes mentions légales sont régies par le droit français. Tout litige relatif à leur interprétation
           et/ou leur exécution relève des juridictions françaises compétentes.

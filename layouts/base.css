@@ -1,4 +1,9 @@
 @layer base {
+  body {
+    color: white;
+    @apply bg-diagonal-pattern;
+  }
+
   a {
     @apply text-blue-400 underline;
   }

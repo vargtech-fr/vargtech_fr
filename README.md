@@ -65,4 +65,3 @@ vargtech_fr/
 ---
 
 Développé avec passion 🐺 par Michael Derrien | VargTech FR
-

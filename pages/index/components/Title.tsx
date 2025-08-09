@@ -1,4 +1,4 @@
-import logoUrl from "../../../assets/logo_no_bg.svg";
+import logoUrl from "@assets/logo_no_bg.svg";
 
 export default function Title() {
   return (

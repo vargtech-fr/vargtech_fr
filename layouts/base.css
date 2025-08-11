@@ -1,4 +1,9 @@
 @layer base {
+  html {
+    @apply h-dvh overflow-y-scroll;
+    scroll-snap-type: y mandatory;
+  }
+
   body {
     color: white;
     @apply bg-diagonal-pattern;
@@ -15,5 +20,12 @@
   }
   a:visited:hover {
     @apply text-purple-600;
+  }
+
+  /* box-sizing */
+  *,
+  *::before,
+  *::after {
+    @apply box-border;
   }
 }

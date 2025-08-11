@@ -14,5 +14,7 @@ export default {
   title: "VargTech",
   description: "Le web au service des pro",
 
+  reactStrictMode: false,
+
   extends: vikeReact,
 } satisfies Config;

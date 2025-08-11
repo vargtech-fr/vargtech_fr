@@ -1,7 +1,21 @@
 @utility bg-diagonal-pattern {
   background-image:
-    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+    linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
     linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 18));
   background-size:
     12px 12px,
@@ -12,4 +26,9 @@
     6px 6px,
     0px 0px;
   background-attachment: local;
+}
+
+@utility animation-delay-* {
+  /* prettier-ignore */
+  animation-delay: --value(integer)ms;
 }

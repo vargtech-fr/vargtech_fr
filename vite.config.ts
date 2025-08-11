@@ -10,8 +10,14 @@ export default defineConfig({
   plugins: [vike(), react(), tailwindcss(), qrcode()],
   resolve: {
     alias: {
-      "@assets": path.resolve(path.dirname(fileURLToPath(import.meta.url)), "./assets"),
-      "@components": path.resolve(path.dirname(fileURLToPath(import.meta.url)), "./components"),
+      "@assets": path.resolve(
+        path.dirname(fileURLToPath(import.meta.url)),
+        "./assets",
+      ),
+      "@components": path.resolve(
+        path.dirname(fileURLToPath(import.meta.url)),
+        "./components",
+      ),
     },
   },
   build: {

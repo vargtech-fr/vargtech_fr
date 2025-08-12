@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+    # Run on all PRs to block merge if checks fail
+    branches: ["**"]
+  push:
+    branches: [master, main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-prettier:
+    name: Lint & Prettier
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./vargtech_fr
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: vargtech_fr/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: ESLint
+        run: pnpm exec eslint .
+
+      - name: Prettier (check)
+        run: pnpm exec prettier --check .

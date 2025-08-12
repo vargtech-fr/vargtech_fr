@@ -81,8 +81,8 @@ export default function HeadDefault() {
       <meta property="og:url" content={CANONICAL} />
       <meta property="og:site_name" content="VargTech" />
       <meta property="og:locale" content="fr_FR" />
+      <meta name="author" content="Michael Derrien" />
 
-      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

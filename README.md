@@ -1,3 +1,5 @@
+[![CI](https://github.com/vargtech-fr/vargtech_fr/actions/workflows/ci.yml/badge.svg)](https://github.com/vargtech-fr/vargtech_fr/actions/workflows/ci.yml)
+
 # 🐺 VargTech FR - Site Vitrine
 
 Site vitrine officiel de **VargTech FR** - Solutions technologiques et développement logiciel sur mesure.

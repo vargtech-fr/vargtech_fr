@@ -1,4 +1,4 @@
-import portraitUrl from "@assets/portrait.png";
+import portraitUrl from "@assets/portrait-200w.webp";
 import clsx from "clsx";
 
 export default function ProblemSolution({ className }: { className?: string }) {

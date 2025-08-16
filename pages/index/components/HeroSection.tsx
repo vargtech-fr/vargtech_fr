@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div
         className="flex flex-col items-center gap-4 text-center text-violet-300"
       >
-        <p className="text-2xl font-bold">Le web au service des pro.</p>
+        <h2 className="text-2xl font-bold">Le web au service des pro.</h2>
         <p className="text-xl">
           Simple. Efficace. Rentable. <br /> Des outils pour{" "}
           <span className="text-atlantis-500 font-bold relative">

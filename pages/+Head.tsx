@@ -1,5 +1,3 @@
-import logoUrl from "../assets/logo_bg_black.svg";
-
 const CANONICAL = "https://vargtech.fr/";
 const LOGO_ABS = "https://vargtech.fr/og/logo.png";
 
@@ -75,7 +73,7 @@ export default function HeadDefault() {
   return (
     <>
       <link rel="canonical" href={CANONICAL} />
-      <link rel="icon" href={logoUrl} />
+      <link rel="icon" href="/favicon.svg" />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content={CANONICAL} />

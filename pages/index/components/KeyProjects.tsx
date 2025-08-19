@@ -6,6 +6,70 @@ import pattounesURL from "@assets/clients_logo/LesPattounesDeMonique.svg";
 import livingPacketsURL from "@assets/clients_logo/LivingPackets.webp";
 import diateamURL from "@assets/clients_logo/diateam.png";
 
+const projectsData = [
+  {
+    id: 0,
+    companyName: "TF1",
+    logo: tf1URL,
+    content: (
+      <div>
+        Développement d&apos;un outils de devis centralisé en remplacement
+        d&apos;un fichier Excel <br /> &rarr; plus de rapidité, moins
+        d&apos;erreurs, meilleure fiabilité.
+      </div>
+    ),
+  },
+  {
+    id: 1,
+    companyName: "OVH",
+    logo: ovhURL,
+    content: (
+      <div>
+        Modernisation d&apos;outils internes essentiels. <br /> &rarr; outils
+        plus stables, moins d&apos;erreurs coûteuses, meilleur contrôle des
+        opérations.
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    companyName: "Les Pattounes De Monique",
+    logo: pattounesURL,
+    content: (
+      <div>
+        Création d&apos;un site web &ldquo;vitrine&rdquo; pour faciliter
+        l&apos;adoption des chats. <br /> &rarr; meilleure visibilité et
+        adoption facilitée.
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    companyName: "LivingPackets",
+    logo: livingPacketsURL,
+    content: (
+      <div>
+        Développement d&apos;un backend pour la gestion d&apos;emballages
+        connectés
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    companyName: "diateam",
+    logo: diateamURL,
+    logoClassName: "bg-black p-1",
+    content: (
+      <div>
+        Développement d&apos;outils pour automatiser et contrôler des
+        simulations d&apos;attaque/défense. <br /> &rarr; Développement
+        d&apos;outils pour automatiser et contrôler des simulations
+        d&apos;attaque/défense.
+      </div>
+    ),
+  },
+];
+
 export default function KeyProjects({ className }: { className?: string }) {
   return (
     <section
@@ -18,64 +82,25 @@ export default function KeyProjects({ className }: { className?: string }) {
       <div className="p-3">
         {/* TODO: fil d'arriane verticale au milieu (colone central en ::after) avec un point centré et qui relie du coup les experiences  */}
         <div>
-          <h2 className="text-center font-bold text-xl">
+          <h2 className="text-center font-bold text-xl mb-2">
             Quelques réalisations
           </h2>
           <div
-            className="grid grid-cols-[minmax(0,1fr)_3fr] gap-4 auto-rows-min"
+            className="grid grid-cols-[minmax(0,1fr)_3fr] gap-4 auto-rows-min
+              bg-teal-50 p-2 text-neutral-violet-950 rounded-xl"
           >
-            <div className="flex items-center">
-              <img src={tf1URL} alt="Logo TF1" className="w-full" />
-            </div>
-            <div className="flex items-center">
-              Développement d&apos;un outils de devis centralisé en remplacement
-              d&apos;un fichier Excel <br /> &rarr; plus de rapidité, moins
-              d&apos;erreurs, meilleure fiabilité.
-            </div>
-
-            <div className="flex items-center">
-              <img src={ovhURL} alt="Logo OVH" className="w-ful" />
-            </div>
-            <div className="flex items-center">
-              Modernisation d&apos;outils internes essentiels. <br /> &rarr;
-              outils plus stables, moins d&apos;erreurs coûteuses, meilleur
-              contrôle des opérations.
-            </div>
-
-            <div className="flex items-center">
-              <img
-                src={pattounesURL}
-                alt="Logo Les Pattounes De Monique"
-                className="w-ful"
-              />
-            </div>
-            <div className="flex items-center">
-              Création d&apos;un site web &ldquo;vitrine&rdquo; pour faciliter
-              l&apos;adoption des chats. <br /> &rarr; meilleure visibilité et
-              adoption facilitée.
-            </div>
-
-            <div className="flex items-center">
-              <img
-                src={livingPacketsURL}
-                alt="Logo LivingPackets"
-                className="w-full"
-              />
-            </div>
-            <div className="flex items-center">
-              Développement d&apos;un backend pour la gestion d&apos;emballages
-              connectés
-            </div>
-
-            <div className="flex items-center">
-              <img src={diateamURL} alt="Logo diateam" className="w-full" />
-            </div>
-            <div className="flex items-center">
-              Développement d&apos;outils pour automatiser et contrôler des
-              simulations d&apos;attaque/défense. <br /> &rarr; Développement
-              d&apos;outils pour automatiser et contrôler des simulations
-              d&apos;attaque/défense.
-            </div>
+            {projectsData.map((project) => (
+              <>
+                <div key={project.id} className="flex items-center">
+                  <img
+                    src={project.logo}
+                    alt={`Logo ${project.companyName}`}
+                    className={clsx("w-full", project.logoClassName)}
+                  />
+                </div>
+                <div className="flex-1">{project.content}</div>
+              </>
+            ))}
           </div>
         </div>
       </div>

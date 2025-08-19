@@ -11,18 +11,21 @@ export default function ProcessSection({ className }: { className?: string }) {
     >
       <div className="p-3">
         <div>
-          <h2 className="text-center font-bold text-xl">
+          <h2 className="text-center font-bold text-xl mb-2">
             Un processus simple et efficace
           </h2>
           <ul className="list-disc pl-5">
-            <li>Premier appel de 30 minutes: découverte de vos besoins</li>
-            <li>Réalisation d&apos;un cahier des charges</li>
+            <li>Premier échange (30 min) pour comprendre vos besoins</li>
+            <li>Définition claire du périmètre et des fonctionnalités</li>
+            <li>Proposition chiffrée et validation</li>
             <li>
-              Après validation, mise en place d&apos;un devis et signature
+              Développement itératif avec maquettes, démonstrations et retours
+              réguliers
             </li>
-            <li>Tout au long du projet, suivi avec maquettes, démo, retours</li>
-            <li>Livraison finale</li>
-            <li>Suivi post-livraison pendant 3 mois</li>
+            <li>Mise en production et livraison finale</li>
+            <li>
+              Support et ajustements inclus pendant 3 mois après la livraison
+            </li>
           </ul>
         </div>
       </div>

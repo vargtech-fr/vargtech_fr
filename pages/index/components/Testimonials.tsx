@@ -122,7 +122,7 @@ export default function Testimonials({ className }: { className?: string }) {
     <section
       className={clsx(
         `relative flex flex-col items-center gap-8 animate-fade-in
-        animation-delay-500 pt-4`,
+        animation-delay-500 pt-4 xl:max-w-1/2 m-auto`,
         className,
       )}
     >
@@ -133,7 +133,7 @@ export default function Testimonials({ className }: { className?: string }) {
           </h2>
           <div
             ref={scrollAreaRef}
-            className="grid grid-flow-col auto-cols-[90vw] overflow-auto gap-4
+            className="grid grid-flow-col auto-cols-[100%] overflow-auto gap-4
               w-full snap-x snap-mandatory"
           >
             {testimonialsData.map((testimonial) => (

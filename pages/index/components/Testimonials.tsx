@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { useRef } from "react";
 
 const testimonialsData = [
   {
@@ -98,22 +99,25 @@ const testimonialsData = [
     ),
     author: "Maxime Bianchi - Développeur iOS Chez PA.COTTE",
   },
-  {
-    id: 5,
-    content: (
-      <>
-        <div>
-          Retrouvez d&apos;autre recommandations:
-          <div>LinkedIn</div>
-          <div>Malt</div>
-        </div>
-      </>
-    ),
-    author: "",
-  },
+  // TODO: add button for malt and linkedin recommandations
+  // {
+  //   id: 5,
+  //   content: (
+  //     <>
+  //       <div>
+  //         Retrouvez d&apos;autre recommandations:
+  //         <div>LinkedIn</div>
+  //         <div>Malt</div>
+  //       </div>
+  //     </>
+  //   ),
+  //   author: "",
+  // },
 ];
 
 export default function Testimonials({ className }: { className?: string }) {
+  const scrollAreaRef = useRef<HTMLDivElement>(null);
+
   return (
     <section
       className={clsx(
@@ -128,13 +132,26 @@ export default function Testimonials({ className }: { className?: string }) {
             Ce que mes clients en disent
           </h2>
           <div
+            ref={scrollAreaRef}
             className="grid grid-flow-col auto-cols-[90vw] overflow-auto gap-4
               w-full snap-x snap-mandatory"
           >
             {testimonialsData.map((testimonial) => (
-              <div key={testimonial.id} className="w-10/12 snap-start">
-                {testimonial.content}
-                {testimonial.author && <p>{testimonial.author}</p>}
+              <div
+                key={testimonial.id}
+                className="w-full snap-center flex flex-col items-center"
+              >
+                <div
+                  className="w-11/12 bg-teal-50 rounded-md text-violet-950
+                    h-full p-3"
+                >
+                  {testimonial.content}
+                  {testimonial.author && (
+                    <p className="text-sm text-gray-800 text-right pt-3">
+                      {testimonial.author}
+                    </p>
+                  )}
+                </div>
               </div>
             ))}
           </div>

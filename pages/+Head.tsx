@@ -1,7 +1,14 @@
-const CANONICAL = "https://vargtech.fr/";
+import { usePageContext } from "vike-react/usePageContext";
+
 const LOGO_ABS = "https://vargtech.fr/og/logo.png";
 
 export default function HeadDefault() {
+  const { urlPathname } = usePageContext();
+
+  const CANONICAL_BASE = "https://vargtech.fr";
+  const canonicalUrl =
+    CANONICAL_BASE + (urlPathname === "/" ? "" : urlPathname);
+
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -72,11 +79,11 @@ export default function HeadDefault() {
 
   return (
     <>
-      <link rel="canonical" href={CANONICAL} />
+      <link rel="canonical" href={canonicalUrl} />
       <link rel="icon" href="/favicon.svg" />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={CANONICAL} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content="VargTech" />
       <meta property="og:locale" content="fr_FR" />
       <meta name="author" content="Michael Derrien" />

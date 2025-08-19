@@ -13,7 +13,7 @@ export default function FinalCTA({ className }: { className?: string }) {
         className,
       )}
     >
-      <div className="p-3">
+      <div className="p-3 flex flex-col items-center h-full">
         <div>
           <h2 className="text-center font-bold text-2xl mb-4">
             Parlons de votre projet !
@@ -48,9 +48,8 @@ export default function FinalCTA({ className }: { className?: string }) {
             </a>
           </div>
         </div>
-        <div>
+        <div className="mt-16">
           <h2 className="text-center font-bold text-xl my-3">
-            {/* Prevoir icons */}
             Retrouvez-moi aussi sur
             <div className="grid grid-cols-3 items-center mt-3 gap-2">
               <a

@@ -128,7 +128,7 @@ export default function Testimonials({ className }: { className?: string }) {
     >
       <div className="p-3 w-full">
         <div>
-          <h2 className="text-center font-bold text-xl w-full">
+          <h2 className="text-center font-bold text-xl w-full mb-2">
             Ce que mes clients en disent
           </h2>
           <div

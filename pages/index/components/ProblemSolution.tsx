@@ -12,10 +12,10 @@ export default function ProblemSolution({ className }: { className?: string }) {
     >
       <div className="p-3">
         <div>
-          <h2 className="text-center font-bold text-xl">
+          <h2 className="text-center font-bold text-xl mb-3">
             Vos outils vous freinent ?
           </h2>
-          <div className="pt-3">
+          <div className="">
             Vous perdez du temps avec
             <ul className="list-disc pl-5">
               <li>des outils mal adaptés ?</li>

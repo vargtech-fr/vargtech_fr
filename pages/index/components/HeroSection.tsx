@@ -48,7 +48,6 @@ export default function HeroSection() {
             </a>
           </div>
         </div>
-        {/* FIXME: néon perfectible */}
 
         <div className="absolute inset-0 -z-10">
           <svg

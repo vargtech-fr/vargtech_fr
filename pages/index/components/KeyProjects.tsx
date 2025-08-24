@@ -80,14 +80,13 @@ export default function KeyProjects({ className }: { className?: string }) {
       )}
     >
       <div className="p-3">
-        {/* TODO: fil d'arriane verticale au milieu (colone central en ::after) avec un point centré et qui relie du coup les experiences  */}
         <div>
           <h2 className="text-center font-bold text-xl mb-2">
             Quelques réalisations
           </h2>
           <div
-            className="grid grid-cols-[minmax(0,1fr)_3fr] gap-4 auto-rows-min
-              bg-teal-50 p-2 text-neutral-violet-950 rounded-xl"
+            className="grid grid-cols-[minmax(0,1fr)_3fr] gap-x-3 gap-y-6
+              auto-rows-min bg-teal-50 p-2 text-neutral-violet-950 rounded-xl"
           >
             {projectsData.map((project) => (
               <>

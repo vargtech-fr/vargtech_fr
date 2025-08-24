@@ -206,13 +206,19 @@ export default function Testimonials({ className }: { className?: string }) {
                 }
               }}
             >
-              <span
-                className="text-2xl font-bold select-none text-violet-500
-                  group-hover:scale-150 transition-transform duration-100
-                  ease-in-out origin-center"
+              <svg
+                className="w-6 h-6 text-violet-500 group-hover:scale-150
+                  transition-transform duration-100 ease-in-out origin-center"
+                fill="currentColor"
+                viewBox="0 0 24 24"
               >
-                &#x1F780;
-              </span>
+                <polygon
+                  points="15,5 7,12 15,19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="currentColor"
+                />
+              </svg>
             </div>
             <div
               ref={scrollAreaRef}
@@ -254,13 +260,19 @@ export default function Testimonials({ className }: { className?: string }) {
                 }
               }}
             >
-              <span
-                className="text-2xl font-bold select-none text-violet-500
-                  group-hover:scale-150 transition-transform duration-100
-                  ease-in-out origin-center"
+              <svg
+                className="w-6 h-6 text-violet-500 group-hover:scale-150
+                  transition-transform duration-100 ease-in-out origin-center"
+                fill="currentColor"
+                viewBox="0 0 24 24"
               >
-                &#x1F782;
-              </span>
+                <polygon
+                  points="9,5 17,12 9,19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="currentColor"
+                />
+              </svg>
             </div>
           </div>
         </div>

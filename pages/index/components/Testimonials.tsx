@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const testimonialsData = [
   {
@@ -117,6 +117,22 @@ const testimonialsData = [
 
 export default function Testimonials({ className }: { className?: string }) {
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (scrollAreaRef.current) {
+      const target = scrollAreaRef.current;
+      const handleScroll = () => {
+        console.log(target.scrollLeft, target.offsetWidth);
+        setCurrentIndex(Math.round(target.scrollLeft / target.offsetWidth));
+      };
+
+      target.addEventListener("scroll", handleScroll);
+      return () => {
+        target.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [scrollAreaRef]);
 
   return (
     <section
@@ -131,29 +147,79 @@ export default function Testimonials({ className }: { className?: string }) {
           <h2 className="text-center font-bold text-xl w-full mb-2">
             Ce que mes clients en disent
           </h2>
-          <div
-            ref={scrollAreaRef}
-            className="grid grid-flow-col auto-cols-[100%] overflow-auto gap-4
-              w-full snap-x snap-mandatory"
-          >
-            {testimonialsData.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="w-full snap-center flex flex-col items-center"
+          <div className="m-auto flex flex-row items-stretch gap-0">
+            <div
+              className={clsx(
+                `w-6 relative flex items-center justify-center cursor-pointer
+                group transition-opacity duration-300`,
+                currentIndex === 0 &&
+                  "opacity-0 cursor-none pointer-events-none",
+              )}
+              onClick={() => {
+                if (scrollAreaRef.current) {
+                  scrollAreaRef.current.scrollBy({
+                    left: -scrollAreaRef.current.offsetWidth,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              <span
+                className="text-2xl font-bold select-none text-violet-500
+                  group-hover:scale-150 transition-transform duration-100
+                  ease-in-out origin-center"
               >
+                &#x1F780;
+              </span>
+            </div>
+            <div
+              ref={scrollAreaRef}
+              className="grow grid grid-flow-col auto-cols-[100%] overflow-auto
+                gap-4 w-full snap-x snap-mandatory no-scrollbar"
+            >
+              {testimonialsData.map((testimonial) => (
                 <div
-                  className="w-11/12 bg-teal-50 rounded-md text-violet-950
-                    h-full p-3"
+                  key={testimonial.id}
+                  className="w-full snap-center flex flex-col items-center"
                 >
-                  {testimonial.content}
-                  {testimonial.author && (
-                    <p className="text-sm text-gray-800 text-right pt-3">
-                      {testimonial.author}
-                    </p>
-                  )}
+                  <div
+                    className="bg-teal-50 rounded-md text-violet-950 w-full
+                      h-full p-3"
+                  >
+                    {testimonial.content}
+                    {testimonial.author && (
+                      <p className="text-sm text-gray-800 text-right pt-3">
+                        {testimonial.author}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div
+              className={clsx(
+                `w-6 relative flex items-center justify-center cursor-pointer
+                group transition-opacity duration-300`,
+                currentIndex === testimonialsData.length - 1 &&
+                  "opacity-0 cursor-none pointer-events-none",
+              )}
+              onClick={() => {
+                if (scrollAreaRef.current) {
+                  scrollAreaRef.current.scrollBy({
+                    left: scrollAreaRef.current.offsetWidth,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              <span
+                className="text-2xl font-bold select-none text-violet-500
+                  group-hover:scale-150 transition-transform duration-100
+                  ease-in-out origin-center"
+              >
+                &#x1F782;
+              </span>
+            </div>
           </div>
         </div>
       </div>

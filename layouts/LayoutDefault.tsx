@@ -13,7 +13,7 @@ export default function LayoutDefault({
         border-x-2 bg-black"
     >
       <div className="grow">{children}</div>
-      <Footer className="px-5 py-3 snap-end" />
+      <Footer className="lg:px-5 px-1 lg:py-3 py-1 snap-end" />
     </div>
   );
 }

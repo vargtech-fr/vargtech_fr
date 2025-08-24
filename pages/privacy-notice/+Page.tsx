@@ -75,9 +75,9 @@ export default function Page() {
           </li>
           <li>
             <strong>Statistiques de visite (optionnel)</strong> : en cas
-            d’activation future de Matomo auto-hébergé, seules des données
+            d&apos;activation future de Matomo auto-hébergé, seules des données
             anonymisées (pages vues, durée, navigateur, localisation
-            approximative) seraient collectées pour mesurer l’audience.
+            approximative) seraient collectées pour mesurer l&apos;audience.
           </li>
         </ul>
       </section>
@@ -85,9 +85,9 @@ export default function Page() {
       <section className="mt-8">
         <h2 className="text-lg font-semibold mb-2">5. Sécurité</h2>
         <p>
-          Ce site est hébergé sur GitHub Pages et bénéficie d’une connexion
+          Ce site est hébergé sur GitHub Pages et bénéficie d&apos;une connexion
           sécurisée HTTPS. Des journaux techniques anonymes peuvent être
-          conservés par l’hébergeur à des fins de sécurité.
+          conservés par l&apos;hébergeur à des fins de sécurité.
         </p>
       </section>
 
@@ -96,8 +96,8 @@ export default function Page() {
         <p>
           Bien que ce site ne collecte pas directement vos données, si vous
           interagissez avec des services tiers comme Calendly, vous pouvez
-          exercer vos droits d’accès, rectification ou suppression auprès de ces
-          services selon leurs procédures.
+          exercer vos droits d&apos;accès, rectification ou suppression auprès
+          de ces services selon leurs procédures.
         </p>
         <p className="mt-2">
           Pour toute question concernant cette politique :{" "}

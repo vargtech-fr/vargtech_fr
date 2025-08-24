@@ -31,16 +31,30 @@ export default function Page() {
               michael.derrien@vargtech.fr
             </a>
             <br />
-            SIRET : 953 268 174 00017
-            <br />
-            RCS : Saint-Nazaire B 953 268 174
+            SIRET : 953 268 174 00018 + <br />
+            RCS : 953 268 174 R.C.S. Saint-Nazaire
             <br />
             Capital social : 1 000 €<br />
-            Numéro de TVA intracommunautaire : FR41953268174
+            Numéro de TVA intracommunautaire : FR94 953 268 174
             <br />
             Directeur de la publication : <strong>Michael Derrien</strong>
           </p>
         </div>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="mb-2 text-lg font-semibold">7. Autres informations</h2>
+        <p>
+          Vous pouvez consulter également nos{" "}
+          <a href="/terms" className="underline">
+            Conditions Générales d&apos;Utilisation (CGU)
+          </a>{" "}
+          et nos{" "}
+          <a href="/sales-terms" className="underline">
+            Conditions Générales de Vente (CGV)
+          </a>
+          .
+        </p>
       </section>
 
       <section className="mt-8">
@@ -67,10 +81,10 @@ export default function Page() {
           3. Propriété intellectuelle
         </h2>
         <p>
-          L’ensemble des contenus de ce site (textes, images, graphismes, logos,
-          icônes, codes, etc.) est la propriété exclusive de{" "}
+          L&apos;ensemble des contenus de ce site (textes, images, graphismes,
+          logos, icônes, codes, etc.) est la propriété exclusive de{" "}
           <strong>VargTech</strong>, sauf mention contraire, et est protégé par
-          le droit d’auteur et les lois françaises et internationales
+          le droit d&apos;auteur et les lois françaises et internationales
           applicables.
         </p>
         <p className="mt-2">
@@ -86,8 +100,8 @@ export default function Page() {
           Les informations fournies sur ce site le sont à titre indicatif.
           Malgré des mises à jour régulières, <strong>VargTech</strong> ne
           saurait être tenue responsable des erreurs, omissions, ou de
-          l’indisponibilité temporaire du site. L’utilisateur demeure
-          responsable de l’usage qu’il fait des informations fournies.
+          l&apos;indisponibilité temporaire du site. L&apos;utilisateur demeure
+          responsable de l&apos;usage qu&apos;il fait des informations fournies.
         </p>
       </section>
 
@@ -97,10 +111,10 @@ export default function Page() {
         </h2>
         <p>
           Ce site statique ne dépose aucun cookie de suivi et ne collecte pas de
-          données personnelles à l’insu des visiteurs. Si un moyen de contact
-          est utilisé (email, prise de rendez-vous, etc.), les informations
-          communiquées ne sont utilisées que pour répondre à la demande et ne
-          sont pas cédées à des tiers.
+          données personnelles à l&apos;insu des visiteurs. Si un moyen de
+          contact est utilisé (email, prise de rendez-vous, etc.), les
+          informations communiquées ne sont utilisées que pour répondre à la
+          demande et ne sont pas cédées à des tiers.
         </p>
       </section>
 

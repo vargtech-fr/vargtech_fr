@@ -13,7 +13,7 @@ const projectsData = [
     logo: tf1URL,
     content: (
       <div>
-        Développement d&apos;un outils de devis centralisé en remplacement
+        Développement d&apos;un outils de simulation centralisé en remplacement
         d&apos;un fichier Excel <br /> &rarr; plus de rapidité, moins
         d&apos;erreurs, meilleure fiabilité.
       </div>

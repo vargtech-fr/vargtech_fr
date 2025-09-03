@@ -9,10 +9,10 @@ export default function Footer({ className }: { className?: string }) {
         flex-wrap`,
       )}
     >
-      <a href="/legal">Mentions légales</a>
-      <a href="/privacy-notice">Politique de confidentialité</a>
-      <a href="/terms">CGU</a>
-      <a href="/sales-terms">CGV</a>
+      <a href="/legal/">Mentions légales</a>
+      <a href="/privacy-notice/">Politique de confidentialité</a>
+      <a href="/terms/">CGU</a>
+      <a href="/sales-terms/">CGV</a>
       <span className="ml-auto text-sm text-neutral-400">
         &copy; {new Date().getFullYear()} VargTech. Tous droits réservés.
       </span>

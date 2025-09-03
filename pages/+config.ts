@@ -16,5 +16,7 @@ export default {
     "J'aide PME et startups avec des applications web sur mesure : automatisation des processus, centralisation des données, MVP SaaS. Remote partout en France, rencontres possibles en local. Un projet ? Parlons‑en !",
   image: "https://vargtech.fr/og/og-image-1200x630.jpg",
 
+  trailingSlash: true,
+
   extends: vikeReact,
 } satisfies Config;

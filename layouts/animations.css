@@ -2,7 +2,7 @@
   --animate-fade-in: fade-in 1s ease-out both;
   --animate-fade-out: fade-out 1s ease-out both;
   --animate-underline: underline 0.25s ease-in-out both;
-  --animate-handshake: handshake 0.5s ease-in-out 2 both;
+  --animate-handshake: handshake 0.5s ease-in-out 3 both;
 
   @keyframes fade-in {
     0% {
@@ -38,7 +38,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(5px);
+      transform: translateY(3px);
     }
     100% {
       transform: translateY(0);

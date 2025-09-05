@@ -1,11 +1,11 @@
 import clsx from "clsx";
 
-import callSVG from "@assets/icons/call.svg";
-import iterrationSVG from "@assets/icons/iterration.svg";
-import perimeterDefinitionSVG from "@assets/icons/perimeter_definition.svg";
-import quoteSVG from "@assets/icons/quote.svg";
-import rocketSVG from "@assets/icons/rocket.svg";
-import supportSVG from "@assets/icons/support.svg";
+import callSVG from "./icons/call.svg";
+import iterrationSVG from "./icons/iterration.svg";
+import perimeterDefinitionSVG from "./icons/perimeter_definition.svg";
+import quoteSVG from "./icons/quote.svg";
+import rocketSVG from "./icons/rocket.svg";
+import supportSVG from "./icons/support.svg";
 
 const processSteps = [
   {

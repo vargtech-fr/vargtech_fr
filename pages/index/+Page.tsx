@@ -3,7 +3,7 @@ import HeroSection from "./components/HeroSection";
 import ProblemSolution from "./components/ProblemSolution";
 import Title from "./components/Title";
 import ValueProposition from "./components/ValueProposition";
-import ProcessSection from "./components/ProcessSection";
+import ProcessSection from "./components/ProcessSection/ProcessSection";
 import FinalCTA from "./components/FinalCTA";
 import Testimonials from "./components/Testimonials";
 import Scroller from "../../components/Scroller";

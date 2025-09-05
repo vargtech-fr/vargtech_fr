@@ -1,0 +1,20 @@
+<svg viewBox="0 0 64 64" width="128" height="128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Support et ajustements (3 mois)</title>
+  <desc id="d">Icône calendrier violet avec mention 3M</desc>
+  <style>
+    .violet{fill:#7C5CFF}
+    .violetD{fill:#5A45D6}
+    .text{font-family:sans-serif;font-weight:700;fill:#FFFFFF}
+  </style>
+
+  <!-- cadre calendrier -->
+  <rect x="12" y="14" width="40" height="36" rx="4" class="violetD"></rect>
+  <!-- bandeau du haut -->
+  <rect x="12" y="14" width="40" height="8" rx="4" class="violet"></rect>
+  <!-- attaches -->
+  <rect x="18" y="10" width="4" height="6" rx="2" fill="#BBA7FF"></rect>
+  <rect x="42" y="10" width="4" height="6" rx="2" fill="#BBA7FF"></rect>
+
+  <!-- texte "3M" centré -->
+  <text x="32" y="40" font-size="16" text-anchor="middle" alignment-baseline="middle" class="text">3M</text>
+</svg>

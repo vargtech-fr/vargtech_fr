@@ -1,0 +1,27 @@
+<svg width="128" height="128" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Développement itératif</title><desc id="d">Écran avec wireframes et flèches de cycle</desc>
+  <defs>
+    <linearGradient id="vg-violet" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C5CFF"></stop><stop offset="100%" stop-color="#BBA7FF"></stop></linearGradient>
+    <linearGradient id="vg-violet-dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5A45D6"></stop><stop offset="100%" stop-color="#8E73FF"></stop></linearGradient>
+    <linearGradient id="vg-green" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A7FF4A"></stop><stop offset="100%" stop-color="#5BFF73"></stop></linearGradient>
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="0" stdDeviation="2.4" flood-color="#9E8BFF" flood-opacity="0.75"></feDropShadow></filter>
+    <filter id="glow-green" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="0" stdDeviation="2.0" flood-color="#93FF58" flood-opacity="0.85"></feDropShadow></filter>
+  </defs>
+
+  <!-- Écran -->
+  <rect x="9" y="12" width="46" height="30" rx="4.5" fill="url(#vg-violet-dark)" filter="url(#glow-violet)"></rect>
+  <rect x="9" y="12" width="46" height="6" rx="4.5" fill="url(#vg-violet)" opacity="0.9"></rect>
+  <rect x="25" y="44" width="14" height="3.5" rx="1.8" fill="#BBA7FF" opacity="0.8"></rect>
+
+  <!-- Wireframes -->
+  <rect x="13" y="21" width="14" height="9" rx="2" fill="white" opacity="0.15"></rect>
+  <rect x="29" y="21" width="22" height="4" rx="2" fill="white" opacity="0.15"></rect>
+  <rect x="29" y="27" width="16" height="3" rx="1.5" fill="white" opacity="0.15"></rect>
+  <rect x="13" y="32" width="38" height="6" rx="2" fill="white" opacity="0.15"></rect>
+
+  <!-- Flèches circulaires (cycle) -->
+  <g filter="url(#glow-green)" opacity="0.95">
+    <path d="M49 51a10 10 0 1 1 7.3-17.1" stroke="url(#vg-green)" stroke-width="2.4" fill="none" stroke-linecap="round"></path>
+    <path d="M58.3 31.9l-0.4 4.8-4.5-1.4" fill="url(#vg-green)"></path>
+  </g>
+</svg>

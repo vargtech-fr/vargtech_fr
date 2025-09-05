@@ -1,0 +1,27 @@
+<svg width="128" height="128" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Proposition chiffrée et validation</title><desc id="d">Document violet avec symbole euro et validation</desc>
+  <defs>
+    <linearGradient id="vg-violet" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C5CFF"></stop><stop offset="100%" stop-color="#BBA7FF"></stop></linearGradient>
+    <linearGradient id="vg-violet-dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5A45D6"></stop><stop offset="100%" stop-color="#8E73FF"></stop></linearGradient>
+    <linearGradient id="vg-green" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A7FF4A"></stop><stop offset="100%" stop-color="#5BFF73"></stop></linearGradient>
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="0" stdDeviation="2.3" flood-color="#9E8BFF" flood-opacity="0.7"></feDropShadow></filter>
+    <filter id="glow-green" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-color="#93FF58" flood-opacity="0.85"></feDropShadow></filter>
+  </defs>
+
+  <!-- Document -->
+  <path d="M14 11a4 4 0 0 1 4-4h18l10 10v31a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V11z" fill="url(#vg-violet)" filter="url(#glow-violet)"></path>
+  <path d="M36 7v8a2 2 0 0 0 2 2h8" fill="url(#vg-violet-dark)"></path>
+
+  <!-- Symbole € -->
+  <g opacity="0.95">
+    <path d="M26.5 28.5c0-3.9 3.1-7 7-7 1.7 0 3.2 0.6 4.4 1.5" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.35"></path>
+    <path d="M23 31h11.5M23 35h11.5" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"></path>
+    <path d="M26.5 38.5c0 3.9 3.1 7 7 7 1.7 0 3.2-0.6 4.4-1.5" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.35"></path>
+  </g>
+
+  <!-- Check de validation -->
+  <g filter="url(#glow-green)">
+    <circle cx="44" cy="41" r="10.5" fill="url(#vg-green)"></circle>
+    <path d="M40 41.2l2.9 2.9 5.8-6.2" stroke="#0B1A0E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

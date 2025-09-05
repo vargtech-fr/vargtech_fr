@@ -29,6 +29,10 @@ export default defineConfig({
         path.dirname(fileURLToPath(import.meta.url)),
         "./components",
       ),
+      "@hooks": path.resolve(
+        path.dirname(fileURLToPath(import.meta.url)),
+        "./hooks",
+      ),
     },
   },
   build: {

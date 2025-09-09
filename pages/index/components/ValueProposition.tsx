@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import useScrollSpy from "../../../hooks/useScrollSpy";
 import { useRef } from "react";
+import portraitUrl from "@assets/portrait-200w.webp";
 
 export default function ValueProposition({
   className,
@@ -36,6 +37,11 @@ export default function ValueProposition({
           </ul>
         </div>
         <div className="pt-3 inline-block">
+          <img
+            className="w-36 px-2 pb-2 float-right"
+            src={portraitUrl}
+            alt="Portrait de Michael Derrien"
+          />
           <h3>Pourquoi préférer un freelance à une agence ?</h3>
           Travailler avec un freelance, c&apos;est bénéficier d&apos;une{" "}
           <span className="font-bold">

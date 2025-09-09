@@ -28,4 +28,9 @@
   *::after {
     @apply box-border;
   }
+
+  /* Span with title */
+  span[title] {
+    @apply cursor-help border-b border-dotted;
+  }
 }

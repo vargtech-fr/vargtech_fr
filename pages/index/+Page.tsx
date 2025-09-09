@@ -1,6 +1,6 @@
 import KeyProjects from "./components/KeyProjects";
 import HeroSection from "./components/HeroSection";
-import ProblemSolution from "./components/ProblemSolution";
+import PainPoint from "./components/PainPoint";
 import Title from "./components/Title";
 import ValueProposition from "./components/ValueProposition";
 import ProcessSection from "./components/ProcessSection/ProcessSection";
@@ -15,11 +15,13 @@ export default function Page() {
         <Title />
         <HeroSection />
       </div>
-      <ProblemSolution className="h-dvh snap-start" />
+      <PainPoint className="h-dvh snap-start" />
       <ValueProposition className="h-dvh snap-start" />
       <KeyProjects className="h-dvh snap-start" />
       <ProcessSection className="h-dvh snap-start" />
+      {/* TODO: ajouter des tarifs, 2-3 pour accrocher le client, avec un CTA si possible */}
       <Testimonials className="h-dvh snap-start" />
+      {/* TODO: FAQ */}
       <FinalCTA className="h-dvh snap-start" />
       <Scroller />
     </div>

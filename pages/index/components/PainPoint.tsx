@@ -14,16 +14,18 @@ export default function PainPoint({ className }: { className?: string }) {
           <h2 className="text-center font-bold text-xl mb-3">
             Vos projets méritent mieux.
           </h2>
-          <div className="bg-red-400 rounded-2xl p-3 mb-3 text-black">
-            Vos projets tournent au ralentis ?
+          <div className="rounded-2xl p-3 mb-3 border-2 border-violet-400">
+            <span className="font-bold">
+              Vos projets tournent au ralentis ?
+            </span>
             <ul className="list-disc pl-5">
-              <li>Des outils bricolés ou dépassés vous freinent ;</li>
-              <li>Des process manuels vous font perdre du temps ;</li>
-              <li>Vos fichiers Excel explosent en complexité ;</li>
-              <li>Vos équipes tech manquent de cadre et de visibilité.</li>
+              <li>Des outils bricolés ou dépassés vous freinent</li>
+              <li>Des process manuels vous font perdre du temps</li>
+              <li>Vos fichiers Excel explosent en complexité</li>
+              <li>Vos équipes tech manquent de cadre et de visibilité</li>
             </ul>
           </div>
-          <div className="p-3">
+          <div className="p-3 font-bold">
             {/* SVG road stop symbol  */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +41,8 @@ export default function PainPoint({ className }: { className?: string }) {
             </svg>
             Ensemble, changeons ça !
           </div>
-          <div className="bg-green-400 rounded-2xl p-3 text-black">
-            Je vous aide à reprendre le contrôle avec :
+          <div className="bg-green-300 rounded-2xl p-3 text-black">
+            <span className="font-bold">Reprennez le contrôle avec :</span>
             <ul className="list-disc pl-5">
               <li>
                 <span className="font-bold">Des outils web sur mesure</span>,

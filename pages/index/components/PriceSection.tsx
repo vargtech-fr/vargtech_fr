@@ -38,7 +38,7 @@ export default function PriceSection({ className }: { className?: string }) {
     <section
       className={clsx(
         `relative flex flex-col items-center gap-8 animate-fade-in
-        animation-delay-500 pt-4 md:max-w-3xl m-auto md:pt-[12vh]`,
+        animation-delay-500 pt-4 md:max-w-1/2 m-auto md:pt-[12vh]`,
         className,
       )}
     >

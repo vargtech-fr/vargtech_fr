@@ -7,7 +7,7 @@ export default function FAQSection({ className }: { className?: string }) {
     <section
       className={clsx(
         `relative flex flex-col items-center gap-8 animate-fade-in
-        animation-delay-500 pt-4 md:max-w-1/2 m-auto md:pt-[12vh] p-3`,
+        animation-delay-500 pt-4 md:max-w-3/4 m-auto p-3`,
         className,
       )}
     >
@@ -19,7 +19,7 @@ export default function FAQSection({ className }: { className?: string }) {
         </p>
       </header>
 
-      <div className="space-y-3">
+      <div className="space-y-3 w-full">
         {faqs.map((item, idx) => (
           <details
             key={idx}

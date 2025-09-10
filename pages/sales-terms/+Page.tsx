@@ -82,6 +82,25 @@ export default function Page() {
           outils, savoir-faire) et se réserve le droit de les réutiliser. Sauf
           accord écrit spécifique, aucune exclusivité n&apos;est consentie.
         </p>
+        <p>
+          <strong>Licence.</strong> Après paiement intégral, le Client bénéficie
+          d&apos;une
+          <strong>
+            {" "}
+            licence non exclusive, mondiale et perpétuelle d&apos;usage interne
+          </strong>
+          sur les livrables, incluant le droit de{" "}
+          <strong>modifier, corriger et faire évoluer</strong> ceux-ci et de{" "}
+          <strong>
+            faire intervenir des prestataires agissant pour son compte
+          </strong>
+          . Sont exclus, sans accord écrit de VARGTECH : la{" "}
+          <strong>revente</strong>, la <strong>redistribution publique</strong>{" "}
+          et la
+          <strong> sous-licence</strong> à des tiers hors groupe du Client. Le
+          Client s&apos;engage à respecter les{" "}
+          <strong>licences open-source</strong> des composants intégrés.
+        </p>
       </section>
 
       <section className="mt-8">

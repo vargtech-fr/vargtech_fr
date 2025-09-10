@@ -8,6 +8,7 @@ import FinalCTA from "./components/FinalCTA";
 import Testimonials from "./components/Testimonials";
 import Scroller from "../../components/Scroller";
 import PriceSection from "./components/PriceSection";
+import FAQSection from "./components/FAQSection/FAQSection";
 
 export default function Page() {
   return (
@@ -22,8 +23,8 @@ export default function Page() {
       <ProcessSection className="h-dvh snap-start" />
       <PriceSection className="h-dvh snap-start" />
       <Testimonials className="h-dvh snap-start" />
-      {/* TODO: FAQ */}
       <FinalCTA className="h-dvh snap-start" />
+      <FAQSection className="snap-start" />
       <Scroller />
     </div>
   );

@@ -7,7 +7,7 @@ export default function FAQSection({ className }: { className?: string }) {
     <section
       className={clsx(
         `relative flex flex-col items-center gap-8 animate-fade-in
-        animation-delay-500 pt-4 md:max-w-1/2 m-auto md:pt-[12vh]`,
+        animation-delay-500 pt-4 md:max-w-1/2 m-auto md:pt-[12vh] p-3`,
         className,
       )}
     >
@@ -23,7 +23,7 @@ export default function FAQSection({ className }: { className?: string }) {
         {faqs.map((item, idx) => (
           <details
             key={idx}
-            className="group rounded-2xl border border-white/15 bg-white/5 p-4
+            className="group rounded-2xl border border-white/15 bg-white/5 p-3
               transition hover:border-white/25"
           >
             <summary

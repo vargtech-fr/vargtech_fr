@@ -7,6 +7,7 @@ import ProcessSection from "./components/ProcessSection/ProcessSection";
 import FinalCTA from "./components/FinalCTA";
 import Testimonials from "./components/Testimonials";
 import Scroller from "../../components/Scroller";
+import PriceSection from "./components/PriceSection";
 
 export default function Page() {
   return (
@@ -19,7 +20,7 @@ export default function Page() {
       <ValueProposition className="h-dvh snap-start" />
       <KeyProjects className="h-dvh snap-start" />
       <ProcessSection className="h-dvh snap-start" />
-      {/* TODO: ajouter des tarifs, 2-3 pour accrocher le client, avec un CTA si possible */}
+      <PriceSection className="h-dvh snap-start" />
       <Testimonials className="h-dvh snap-start" />
       {/* TODO: FAQ */}
       <FinalCTA className="h-dvh snap-start" />

@@ -11,9 +11,9 @@ export default {
   Layout,
 
   title:
-    "VargTech • Applications web sur mesure — Développeur freelance Go/React",
+    "VargTech • Outils web industriels & MVP rapides — Expert freelance Go/React",
   description:
-    "J'aide PME et startups avec des applications web sur mesure : automatisation des processus, centralisation des données, MVP SaaS. Remote partout en France, rencontres possibles en local. Un projet ? Parlons‑en !",
+    "Développeur freelance Go/React spécialisé dans les outils web industriels sur mesure, MVP rapides et automatisation des processus métier. Expert technique pour PME et startups. Remote France + local possible.",
   image: "https://vargtech.fr/og/og-image-1200x630.jpg",
 
   trailingSlash: true,

@@ -49,14 +49,14 @@ export default function HeadDefault() {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: "Développement d'applications web sur mesure",
+      name: "Outils web industriels et MVP rapides sur mesure",
       provider: {
         "@type": "Organization",
         name: "VargTech",
         url: "https://vargtech.fr",
       },
       serviceType:
-        "Développeur Go/React freelance, MVP SaaS, automatisation des processus",
+        "Outils web industriels sur mesure, MVP rapides, automatisation des processus métier, accompagnement technique Go/React",
       areaServed: "France",
       availableChannel: {
         "@type": "ServiceChannel",
@@ -67,7 +67,7 @@ export default function HeadDefault() {
       "@context": "https://schema.org",
       "@type": "Person",
       name: "Michael Derrien",
-      jobTitle: "Développeur freelance Go/React",
+      jobTitle: "Expert freelance Go/React - Outils web industriels",
       worksFor: {
         "@type": "Organization",
         name: "VargTech",

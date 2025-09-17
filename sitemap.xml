@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://vargtech.fr/</loc>
+    <lastmod>2025-09-17T13:24:09.973Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vargtech.fr/legal/</loc>
+    <lastmod>2025-09-17T13:24:21.954Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vargtech.fr/privacy-notice/</loc>
+    <lastmod>2025-09-17T13:24:21.954Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vargtech.fr/sales-terms/</loc>
+    <lastmod>2025-09-17T13:24:21.953Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vargtech.fr/terms/</loc>
+    <lastmod>2025-09-17T13:24:21.954Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

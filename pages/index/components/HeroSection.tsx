@@ -1,7 +1,12 @@
 import tf1URL from "@assets/clients_logo/TF1.svg";
 import ovhURL from "@assets/clients_logo/OVHCloud.svg";
 
+import { PopupButton } from "react-calendly";
+
 export default function HeroSection() {
+  const rootElement =
+    typeof document !== "undefined" ? document.getElementById("root") : null;
+
   return (
     <section className="animate-fade-in animation-delay-500 pt-[4vh]">
       <div className="relative flex flex-col items-center justify-center gap-8">
@@ -18,16 +23,6 @@ export default function HeroSection() {
           </h2>
           <p className="text-xl">Simple. Efficace. Rentable.</p>
         </div>
-        <div className="p-3">
-          <div className="flex flex-col gap-3">
-            <div>Outils web industrielle sur mesure.</div>
-            <div>
-              Développement de <span title="Minimum Viable Product">MVP</span>{" "}
-              rapide.
-            </div>
-            <div>Accompagnement technique expert en Go/React.</div>
-          </div>
-        </div>
 
         <div className="relative w-full z-0 pt-2">
           <div className="px-5 max-w-md mx-auto">
@@ -35,16 +30,22 @@ export default function HeroSection() {
               Un projet ? Parlons-en !
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-              <a
-                href="https://calendly.com/michael-derrien-proton/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-full block rounded-2xl bg-blue-600 p-2 text-lg
-                  font-bold text-white transition-colors hover:bg-blue-400
-                  text-center content-center no-underline"
-              >
-                Prendre rendez&#8209;vous
-              </a>
+              {rootElement && (
+                <PopupButton
+                  className="h-full block rounded-2xl bg-blue-600 p-2 text-lg
+                    font-bold text-white transition-colors hover:bg-blue-400
+                    text-center content-center no-underline cursor-pointer"
+                  url="https://calendly.com/michael-derrien-proton/30min"
+                  text="Prendre rendez-vous"
+                  rootElement={rootElement}
+                  pageSettings={{
+                    hideEventTypeDetails: true,
+                    backgroundColor: "f0fdfa",
+                    textColor: "242029",
+                  }}
+                ></PopupButton>
+              )}
+
               <div className="text-sm row-start-2 text-center">
                 Appel gratuit
               </div>
